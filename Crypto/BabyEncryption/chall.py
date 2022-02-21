@@ -8,7 +8,7 @@ def encryption(msg):
     return bytes(ct)
 
 ct = encryption(MSG)
-f = open('./msg.enc','w')
+f = open('./msg.enc', 'w')
 f.write(ct.hex())
 f.close()
 
